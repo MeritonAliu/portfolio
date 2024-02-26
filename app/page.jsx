@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main>
       <div className="landing">
-        <h1>Meriton Aliu</h1>
+        <h1 className='typewriter'>Meriton Aliu</h1>
         <p className="p-description">young aspiring engineer and developer</p>
         <div className="btn-container">
           <Link className="btn" href="https://github.com/MeritonAliu/">
