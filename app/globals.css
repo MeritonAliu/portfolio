@@ -50,15 +50,9 @@ main {
 }
 
 
-.landing, .about, .projects{
+.landing, .about{
   scroll-snap-align: start;
   height: 100vh;
-}
-
-.projects
-{
-  background-color: #000000;
-  color: white;
 }
 
 .landing{
@@ -145,7 +139,7 @@ main {
   justify-content: space-between;
 }
 
-.about-title{
+.titles{
   text-align: center;
   font-size: 24px;
   font-weight: bold;
@@ -184,7 +178,85 @@ main {
 .projects{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 25%;
-  text-align: center;
+  background-color: #000000;
+  color: white;
+  scroll-snap-align: start;
+  border: 2px dotted red;
+  min-height: 100vh;
 }
+
+@media only screen and (max-width: 780px) {
+  .projects{
+    min-height: 160vh;
+    background-color: red;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .projects{
+    min-height: 120vh;
+  }
+}
+
+@media only screen and (max-width: 1570px) {
+  .projects{
+    min-height: 115vh;
+  }
+}
+
+.projects-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+  gap: 50px;
+  padding: 16px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.proj{
+  width: 350px;
+  max-height: fit-content;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 1;
+  border: white 2px solid;
+  border-radius: 16px;
+  transition: transform 0.3s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.proj:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+  box-shadow: #370d86 15px 15px 3px 3px;
+
+}
+
+.proj-title{
+  color: #6919ff;
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 0px 8px 0px 8px;
+  font-size: 24px;
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 16px;
+}
+
+.project-images{
+  border-radius: 8px;
+  max-width: 250px;
+  height: auto;
+  margin-top: 16px;
+}
+
+.project-description{
+  text-align: center;
+  margin-top: 16px;
+  padding: 8px 32px 32px 32px;
+}
+

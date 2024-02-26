@@ -1,7 +1,10 @@
 'use client';
 
 import Link from 'next/link'
+import Image from 'next/image';
 import Transition from './components/transition';
+import { useScroll } from "framer-motion";
+import { lazy } from 'react';
 
 export default function Home() {
 
@@ -9,23 +12,23 @@ export default function Home() {
     <main>
       <div className="landing">
         <h1 className='typewriter'>Meriton Aliu</h1>
-        <Transition> 
+        <Transition>
           <p className="p-description">a young <span className='span-p-description'>aspiring</span> <br /> engineer and developer</p>
           <div className="btn-container">
-          <Link className="btn" href="https://github.com/MeritonAliu/">
-            GitHub
-          </Link>
-          <Link className="btn" href="https://ch.linkedin.com/in/meriton-aliu-44a595252">
-            Linkedin
-          </Link>
-        </div>
+            <Link className="btn" href="https://github.com/MeritonAliu/">
+              GitHub
+            </Link>
+            <Link className="btn" href="https://ch.linkedin.com/in/meriton-aliu-44a595252">
+              Linkedin
+            </Link>
+          </div>
         </Transition>
         <Link href="#about" className="p-scroll">
           scroll down for more
         </Link>
       </div>
       <div id='about' className="about">
-        <div className="about-title">
+        <div className="titles">
           <h1>About me</h1>
         </div>
 
@@ -58,10 +61,58 @@ export default function Home() {
         </div>
 
       </div>
-      <div className="projects">
-        <h1>My projects</h1>
-        <h1>Currently under <span className='span-p-description'>contruction</span></h1>
+      <div id='projects' className="projects">
+        <h1 className='titles'>My projects</h1>
+        <div className='projects-container'>
+          <Link href="https://github.com/MeritonAliu/weatherio">
+            <div className="proj">
+              <h1 className="proj-title">
+                weatherio
+              </h1>
+              <Image className='project-images' src={"/weatherio.png"} width={500} height={500} alt='weatherio' loading='lazy' />
+              <p className="project-description">
+                A simple weather app that uses the OpenWeatherMap API to get the weather of a city.
+              </p>
+            </div>
+          </Link>
+          <Link href="https://github.com/MeritonAliu/efm32core">
+            <div className="proj">
+              <h1 className="proj-title">
+                efm32core
+              </h1>
+              <Image className='project-images' src={"/efm32core.jpg"} width={500} height={500} alt='"Embedded World 2016, EFM32 Happy Gecko" by Ordercrazy is marked with CC0 1.0. ' loading='lazy' />
+              <p className="project-description">
+                This projects provides a core library for the EFM32ZG mikrocontroller. Display, I2C TMP100, GPIO, Timer
+              </p>
+            </div>
+          </Link>
+          <Link href="https://github.com/MeritonAliu/activfilter">
+            <div className="proj">
+              <h1 className="proj-title">
+                activfilter
+              </h1>
+              <Image className='project-images' src={"/activfilter.png"} width={500} height={500} alt='"High-Pass filter Bode Magnitude and Phase plots" by User:Brews_ohare is marked with CC0 1.0. ' loading='lazy' />
+              <p className="project-description">
+                Simulation of electronic activ filter in c#
+              </p>
+            </div>
+          </Link>
+          <Link href="https://github.com/MeritonAliu/blockchain-py">
+            <div className="proj">
+              <h1 className="proj-title">
+                blockchain-py
+              </h1>
+              <Image className='project-images' src={"/blockchain-py.png"} width={500} height={500} alt='"High-Pass filter Bode Magnitude and Phase plots" by User:Brews_ohare is marked with CC0 1.0. ' loading='lazy' />
+              <p className="project-description">
+                blockchain example with pyhton
+              </p>
+            </div>
+          </Link>
+        </div>
       </div>
+      <footer>
+        <h1>Currently under <span className='span-p-description'>contruction</span></h1>
+      </footer>
     </main>
   );
 }
