@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import Transition from './components/transition';
+import { useScroll } from "framer-motion";
 
 export default function Home() {
 
@@ -25,7 +26,7 @@ export default function Home() {
         </Link>
       </div>
       <div id='about' className="about">
-        <div className="about-title">
+        <div className="titles">
           <h1>About me</h1>
         </div>
 
@@ -58,10 +59,34 @@ export default function Home() {
         </div>
 
       </div>
-      <div className="projects">
-        <h1>My projects</h1>
-        <h1>Currently under <span className='span-p-description'>contruction</span></h1>
+      <div id='projects' className="projects">
+        <h1 className='titles'>My projects</h1>
+        <div className='projects-container'>
+            <div className="proj">
+              <h1 className="proj-title">
+                First
+              </h1>
+            </div>
+            <div className="proj">
+              <h1 className="proj-title">
+                second
+              </h1>
+            </div>
+            <div className="proj">
+              <h1 className="proj-title">
+                third
+              </h1>
+            </div>
+            <div className="proj">
+              <h1 className="proj-title">
+                fourth
+              </h1>
+            </div>
+        </div>
       </div>
+      <footer>
+        <h1>Currently under <span className='span-p-description'>contruction</span></h1>
+      </footer>
     </main>
   );
 }
