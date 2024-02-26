@@ -34,6 +34,7 @@ main {
 .about{
   background-color: black;
   color: white;
+  background: linear-gradient(180deg, rgba(95,22,233,1) 0%, rgba(177,128,255,1) 50%, rgba(230,217,255,1) 100%);
 }
 
 .landing{
@@ -42,6 +43,7 @@ main {
   text-align: center;
   
   background: #6919ff;
+  background: linear-gradient(0deg, rgba(95,22,233,1) 0%, rgba(78,18,190,1) 50%, rgba(51,11,125,1) 100%);
   color: #fffef9;
 
   h1{
