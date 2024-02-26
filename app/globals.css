@@ -43,6 +43,21 @@ html{
   }
 }
 
+@keyframes gearTurn {
+  0%{
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(370deg);
+    animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  
+  }
+  100% {
+    transform: rotate(0deg);
+  
+  }
+}
+
 main {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
@@ -64,10 +79,34 @@ main {
   color: #fffef9;
 }
 
+.headline{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.gear-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+.gear{
+  max-width: 48px;
+  height: auto;
+  filter: invert(100%);
+  animation: gearTurn 4s infinite;
+}
+
 .p-description{
   font-size: 32px;
   font-weight: bold;
   margin-top: 25%;
+  flex-basis: 50%;
+
 }
 
 .span-p-description{
@@ -150,6 +189,12 @@ main {
 
 .about-p-child{
   max-width: 400px;
+  opacity: 0.90;
+}
+
+.about-p-child:hover{
+  scale: 1.05;
+  opacity: 0.95;
 }
 
 .about-p-child:nth-child(3n){
