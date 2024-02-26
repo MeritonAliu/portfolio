@@ -128,9 +128,14 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25%;
+  gap: 10%
 }
 
+@media (min-width: 576px) {
+  .about {
+    gap: 25%;
+  }
+}
 .about-p-container{
   display: flex;
   text-align: center;
