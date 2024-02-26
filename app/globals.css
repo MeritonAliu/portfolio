@@ -12,8 +12,6 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
   }
 }
 
@@ -31,6 +29,11 @@ main {
 .landing, .about, .projects{
   scroll-snap-align: start;
   height: 100vh;
+}
+
+.about{
+  background-color: black;
+  color: white;
 }
 
 .landing{
@@ -86,11 +89,11 @@ main {
 
   .p-scroll{
     margin-top: auto;
-    animation: animation-scroll 2s infinite alternate;
+    animation: p-animation-scroll 2s infinite alternate;
   }
 }
 
-@keyframes animation-scroll {
+@keyframes p-animation-scroll {
   from {
     transform: translateY(0);
   }
