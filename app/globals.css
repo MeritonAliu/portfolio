@@ -56,15 +56,9 @@ main {
   height: 100vh;
 }
 
-.about{
-  background-color: #5f16e8;
-  color: white;
-}
-
 .projects
 {
-  background-color: #5f16e8;
-  background: linear-gradient(180deg, rgba(95,22,232,1) 0%, rgba(51,11,125,1) 100%); 
+  background-color: #000000;
   color: white;
 }
 
@@ -73,8 +67,7 @@ main {
   flex-direction: column;
   text-align: center;
   
-  background: #6919ff;
-  background: linear-gradient(0deg, rgba(95,22,233,1) 0%, rgba(78,18,190,1) 50%, rgba(51,11,125,1) 100%);
+  background-color: #000000;
   color: #fffef9;
 }
 
@@ -82,6 +75,13 @@ main {
   font-size: 32px;
   font-weight: bold;
   margin-top: 25%;
+}
+
+.span-p-description{
+  color: #6919ff;
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 0px 8px 0px 8px;
 }
 
 .btn-container{
@@ -123,32 +123,44 @@ main {
 
 /* ------------------ ABOUT ------------------ */
 .about{
+  background-color: #000000;
+  color: white;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  border: 2px red solid;
-  justify-content: center;
+  gap: 25%;
+}
+
+.about-p-container{
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  padding-left: 32px;
+  padding-right: 32px;
+  gap: 40px;
+  justify-content: space-between;
 }
 
 .about-title{
-  display: flex;
-  align-items: end;
-  align-self: flex-start;
-  margin: 100px;
-  height: fit-content;
-  
-}
-
-.about-title h1{
-  justify-self: flex-start;
+  text-align: center;
   font-size: 24px;
   font-weight: bold;
+  margin-top: 8px;
+  border-bottom: solid 1px #ffffff;
+  align-self: center;
 }
 
-.about-paragraph{
-  
-  max-width: 60%;
-  flex-wrap: wrap;
+.about-p-child{
+  max-width: 400px;
+}
+
+.about-p-child:nth-child(3n){
+  max-width: 100%;
+  flex-basis: 100%; /* Added this line */
+}
+
+.about-p-title{
+  margin-bottom: 24px;
 }
 
 .typewriter {
