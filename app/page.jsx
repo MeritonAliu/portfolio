@@ -3,8 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image';
 import Transition from './components/transition';
-import { useScroll } from "framer-motion";
-import { lazy } from 'react';
+import gear from './../public/icons8-gear.svg';
 
 export default function Home() {
 
@@ -13,7 +12,13 @@ export default function Home() {
       <div className="landing">
         <h1 className='typewriter'>Meriton Aliu</h1>
         <Transition>
-          <p className="p-description">a young <span className='span-p-description'>aspiring</span> <br /> engineer and developer</p>
+          
+          <div className="headline">
+            <div className="gear-container">
+              <Image className="gear" src={gear} alt="gear" height={500} width={500} />
+            </div>
+            <p className="p-description">a young <span className='span-p-description'>aspiring</span> <br /> engineer and developer</p>
+          </div>
           <div className="btn-container">
             <Link className="btn" href="https://github.com/MeritonAliu/">
               GitHub
