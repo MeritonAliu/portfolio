@@ -19,18 +19,17 @@ html{
   scroll-behavior: smooth;
 }
 
-@keyframes cursor {
-  0%, 100% { 
-     
-  }
-}
-
 @keyframes text {
   0% { 
     width: 0; 
+    opacity: 0;
+  }
+  1%{
+    opacity: 1;
   }
   100% { 
     width: 176px; 
+    opacity: 1;
   }
 }
 
@@ -171,8 +170,9 @@ main {
 .typewriter {
   white-space: nowrap;
   overflow: hidden;
-  animation: cursor 2s step-start infinite, 
-  text 2s steps(24);
+  /* Start with opacity 0 to hide the text */
+  opacity: 0;
+  animation:  text 1s steps(24) 1s forwards; /* 'forwards' will maintain the final state after the animation completes */
   font-size: 24px;
   font-weight: bold;
   margin-top: 8px;

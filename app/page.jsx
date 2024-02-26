@@ -1,12 +1,17 @@
+'use client';
+
 import Link from 'next/link'
+import Transition from './components/transition';
 
 export default function Home() {
+
   return (
     <main>
       <div className="landing">
         <h1 className='typewriter'>Meriton Aliu</h1>
-        <p className="p-description">a young <span className='span-p-description'>aspiring</span> <br /> engineer and developer</p>
-        <div className="btn-container">
+        <Transition> 
+          <p className="p-description">a young <span className='span-p-description'>aspiring</span> <br /> engineer and developer</p>
+          <div className="btn-container">
           <Link className="btn" href="https://github.com/MeritonAliu/">
             GitHub
           </Link>
@@ -14,6 +19,7 @@ export default function Home() {
             Linkedin
           </Link>
         </div>
+        </Transition>
         <Link href="#about" className="p-scroll">
           scroll down for more
         </Link>
