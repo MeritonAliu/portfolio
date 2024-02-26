@@ -1,5 +1,15 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## TODO
+
+- End of Website pusback
+- gear check
+- about me margin top smaller, bottom larger
+- readme change to be made open source,
+- footer with source code, and other links and detail
+- maybe picture of myself
+- about me responsiveness better
+
 ## Getting Started
 
 First, run the development server:
