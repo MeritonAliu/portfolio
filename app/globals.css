@@ -181,14 +181,12 @@ main {
   background-color: #000000;
   color: white;
   scroll-snap-align: start;
-  border: 2px dotted red;
   min-height: 100vh;
 }
 
 @media only screen and (max-width: 780px) {
   .projects{
     min-height: 160vh;
-    background-color: red;
   }
 }
 
