@@ -14,9 +14,11 @@ export default function Home() {
             Linkedin
           </Link>
         </div>
-        <p className="p-scroll">scroll down for more</p>
+        <Link href="#about" className="p-scroll">
+          scroll down for more
+        </Link>
       </div>
-      <div className="about">
+      <div id='about' className="about">
         <div className="about-title">
           <h1>About me</h1>
         </div>

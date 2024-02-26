@@ -44,12 +44,12 @@ html{
   }
 }
 
-
 main {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
 }
+
 
 .landing, .about, .projects{
   scroll-snap-align: start;
@@ -118,7 +118,7 @@ main {
 .p-scroll{
   margin-top: auto;
   animation: p-animation-scroll 2s infinite alternate;
-  font-size: x-large;
+  font-size: 16px;
 }
 
 /* ------------------ ABOUT ------------------ */
