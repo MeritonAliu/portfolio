@@ -12,13 +12,36 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
   }
 }
 
 html{
   scroll-behavior: smooth;
+}
+
+@keyframes cursor {
+  0%, 100% { 
+     
+  }
+}
+
+@keyframes text {
+  0% { 
+    width: 0; 
+  }
+  100% { 
+    width: 176px; 
+  }
+}
+
+@keyframes p-animation-scroll {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
 }
 
 
@@ -33,70 +56,124 @@ main {
   height: 100vh;
 }
 
+.projects
+{
+  background-color: #000000;
+  color: white;
+}
+
 .landing{
   display: flex;
   flex-direction: column;
   text-align: center;
   
-  background: #6919ff;
+  background-color: #000000;
   color: #fffef9;
-
-  h1{
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 8px;
-    border-bottom: solid 1px #ffffff;
-  }
-
-  .p-description{
-    font-size: 32px;
-    font-weight: bold;
-    margin-top: 25%;
-  }
-
-  .btn-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 48px;
-  }
-
-  .btn{
-    border: #fffef9 1px solid;
-    border-radius: 8px;
-    padding: 8px;
-    cursor: pointer;
-    margin-top: 64px;
-    width: 100px;
-    scale: 1.00;
-    box-shadow: #370d86 5px 5px 1px 1px;
-    font-weight: bold;
-    font-size: 16px;
-    transition: transform 0.3s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
-    transform-style: preserve-3d; /* Optional for smooth shadow animation */
-
-    &:hover{
-      background: #fffef9;
-      color: #6919ff;
-      transform: scale(1.05);
-      transition: 0.3s;
-      box-shadow: #370d86 10px 10px 2px 2px;
-    }
-  }
-
-  .p-scroll{
-    margin-top: auto;
-    animation: animation-scroll 2s infinite alternate;
-  }
 }
 
-@keyframes animation-scroll {
-  from {
-    transform: translateY(0);
-  }
-
-  to {
-    transform: translateY(-10px);
-  }
+.p-description{
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 25%;
 }
+
+.span-p-description{
+  color: #6919ff;
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 0px 8px 0px 8px;
+}
+
+.btn-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 48px;
+}
+
+
+.btn{
+  border: #fffef9 1px solid;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  margin-top: 64px;
+  width: 100px;
+  scale: 1.00;
+  box-shadow: #370d86 5px 5px 1px 1px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: transform 0.3s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  transform-style: preserve-3d; /* Optional for smooth shadow animation */
+}
+
+.btn:hover{
+  background: #fffef9;
+  color: #6919ff;
+  transform: scale(1.05);
+  transition: 0.3s;
+  box-shadow: #370d86 10px 10px 2px 2px;
+}
+
+.p-scroll{
+  margin-top: auto;
+  animation: p-animation-scroll 2s infinite alternate;
+  font-size: x-large;
+}
+
+/* ------------------ ABOUT ------------------ */
+.about{
+  background-color: #000000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25%;
+}
+
+.about-p-container{
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  padding-left: 32px;
+  padding-right: 32px;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.about-title{
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 8px;
+  border-bottom: solid 1px #ffffff;
+  align-self: center;
+}
+
+.about-p-child{
+  max-width: 400px;
+}
+
+.about-p-child:nth-child(3n){
+  max-width: 100%;
+  flex-basis: 100%; /* Added this line */
+}
+
+.about-p-title{
+  margin-bottom: 24px;
+}
+
+.typewriter {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: cursor 2s step-start infinite, 
+  text 2s steps(24);
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 8px;
+  border-bottom: solid 1px #ffffff;
+  align-self: center; 
+}
+
+/* ------------------ PROJECTS ------------------ */
 
