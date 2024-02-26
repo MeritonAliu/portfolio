@@ -17,7 +17,14 @@ export default function Home() {
         <p className="p-scroll">scroll down for more</p>
       </div>
       <div className="about"> 
-        <h1>About me</h1>
+        <div className="about-title">
+          <h1>About me</h1>
+        </div>
+        <div className="about-paragraph">
+          <p>
+            I am Meriton, a young aspiring engineer and developer, currently studying computer science at the University of Applied Sciences in Bern, Switzerland. I am passionate about technology and software development, and I am always looking for new challenges and opportunities to improve my skills.
+          </p>
+        </div>  
       </div>
       <div className="projects"> 
         <h1>My projects</h1>

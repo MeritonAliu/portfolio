@@ -19,6 +19,31 @@ html{
   scroll-behavior: smooth;
 }
 
+@keyframes cursor {
+  0%, 100% { 
+     
+  }
+}
+
+@keyframes text {
+  0% { 
+    width: 0; 
+  }
+  100% { 
+    width: 176px; 
+  }
+}
+
+@keyframes p-animation-scroll {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
+}
+
 
 main {
   scroll-snap-type: y mandatory;
@@ -51,58 +76,79 @@ main {
   background: #6919ff;
   background: linear-gradient(0deg, rgba(95,22,233,1) 0%, rgba(78,18,190,1) 50%, rgba(51,11,125,1) 100%);
   color: #fffef9;
-
-  .p-description{
-    font-size: 32px;
-    font-weight: bold;
-    margin-top: 25%;
-  }
-
-  .btn-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 48px;
-  }
-
-  .btn{
-    border: #fffef9 1px solid;
-    border-radius: 8px;
-    padding: 8px;
-    cursor: pointer;
-    margin-top: 64px;
-    width: 100px;
-    scale: 1.00;
-    box-shadow: #370d86 5px 5px 1px 1px;
-    font-weight: bold;
-    font-size: 16px;
-    transition: transform 0.3s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
-    transform-style: preserve-3d; /* Optional for smooth shadow animation */
-
-    &:hover{
-      background: #fffef9;
-      color: #6919ff;
-      transform: scale(1.05);
-      transition: 0.3s;
-      box-shadow: #370d86 10px 10px 2px 2px;
-    }
-  }
-
-  .p-scroll{
-    margin-top: auto;
-    animation: p-animation-scroll 2s infinite alternate;
-    font-size: x-large;
-  }
 }
 
-@keyframes p-animation-scroll {
-  from {
-    transform: translateY(0);
-  }
+.p-description{
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 25%;
+}
 
-  to {
-    transform: translateY(-10px);
-  }
+.btn-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 48px;
+}
+
+
+.btn{
+  border: #fffef9 1px solid;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  margin-top: 64px;
+  width: 100px;
+  scale: 1.00;
+  box-shadow: #370d86 5px 5px 1px 1px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: transform 0.3s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  transform-style: preserve-3d; /* Optional for smooth shadow animation */
+}
+
+.btn:hover{
+  background: #fffef9;
+  color: #6919ff;
+  transform: scale(1.05);
+  transition: 0.3s;
+  box-shadow: #370d86 10px 10px 2px 2px;
+}
+
+.p-scroll{
+  margin-top: auto;
+  animation: p-animation-scroll 2s infinite alternate;
+  font-size: x-large;
+}
+
+/* ------------------ ABOUT ------------------ */
+.about{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 2px red solid;
+  justify-content: center;
+}
+
+.about-title{
+  display: flex;
+  align-items: end;
+  align-self: flex-start;
+  margin: 100px;
+  height: fit-content;
+  
+}
+
+.about-title h1{
+  justify-self: flex-start;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.about-paragraph{
+  
+  max-width: 60%;
+  flex-wrap: wrap;
 }
 
 .typewriter {
@@ -119,17 +165,3 @@ main {
   align-self: center;
 }
 
-@keyframes cursor {
-  0%, 100% { 
-     
-  }
-}
-
-@keyframes text {
-  0% { 
-    width: 0; 
-  }
-  100% { 
-    width: 176px; 
-  }
-}
