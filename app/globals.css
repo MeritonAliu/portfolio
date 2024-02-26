@@ -189,6 +189,12 @@ main {
 
 .about-p-child{
   max-width: 400px;
+  opacity: 0.90;
+}
+
+.about-p-child:hover{
+  scale: 1.05;
+  opacity: 0.95;
 }
 
 .about-p-child:nth-child(3n){

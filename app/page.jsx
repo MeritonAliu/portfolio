@@ -49,7 +49,7 @@ export default function Home() {
           <div className="about-p-child">
             <p className="about-p-title">My current <span className='span-p-description'>situation</span> <br /></p>
             <p>
-              Trained electronics engineer EFZ at Bruke Switzerland AG
+              Trained electronics engineer EFZ at Bruker Switzerland AG
               Currently absolving the technical vocational baccalaureate. <br />
               My next goal is to start the bachelors degree in computer science at the ZHAW in Zürich. <br />
             </p>
