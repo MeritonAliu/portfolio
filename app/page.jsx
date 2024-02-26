@@ -52,6 +52,7 @@ export default function Home() {
       </div>
       <div className="projects">
         <h1>My projects</h1>
+        <h1>Currently under <span className='span-p-description'>contruction</span></h1>
       </div>
     </main>
   );
