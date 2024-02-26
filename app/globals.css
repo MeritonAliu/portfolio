@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 200, 200, 200;
+  --background-end-rgb: 90, 70, 70;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,18 +17,84 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+html{
+  scroll-behavior: smooth;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+
+main {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.landing, .about, .projects{
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
+.landing{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+  background: #6919ff;
+  color: #fffef9;
+
+  h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 8px;
+    border-bottom: solid 1px #ffffff;
+  }
+
+  .p-description{
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 25%;
+  }
+
+  .btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 48px;
+  }
+
+  .btn{
+    border: #fffef9 1px solid;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    margin-top: 64px;
+    width: 100px;
+    scale: 1.00;
+    box-shadow: #370d86 5px 5px 1px 1px;
+    font-weight: bold;
+    font-size: 16px;
+
+    &:hover{
+      background: #fffef9;
+      color: #6919ff;
+      scale: 1.05;
+      transition: 0.4s;
+      box-shadow: #370d86 10px 10px 2px 2px;
+    }
+  }
+
+  .p-scroll{
+    margin-top: auto;
+    animation: animation-scroll 2s infinite alternate;
   }
 }
+
+@keyframes animation-scroll {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
+}
+
