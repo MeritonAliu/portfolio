@@ -72,12 +72,14 @@ main {
     box-shadow: #370d86 5px 5px 1px 1px;
     font-weight: bold;
     font-size: 16px;
+    transition: transform 0.3s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    transform-style: preserve-3d; /* Optional for smooth shadow animation */
 
     &:hover{
       background: #fffef9;
       color: #6919ff;
-      scale: 1.05;
-      transition: 0.4s;
+      transform: scale(1.05);
+      transition: 0.3s;
       box-shadow: #370d86 10px 10px 2px 2px;
     }
   }
