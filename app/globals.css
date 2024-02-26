@@ -166,14 +166,14 @@ main {
 .typewriter {
   white-space: nowrap;
   overflow: hidden;
-  border-right: 4px solid #212121;
   animation: cursor 2s step-start infinite, 
   text 2s steps(24);
-
   font-size: 24px;
   font-weight: bold;
   margin-top: 8px;
   border-bottom: solid 1px #ffffff;
-  align-self: center;
+  align-self: center; 
 }
+
+/* ------------------ PROJECTS ------------------ */
 
