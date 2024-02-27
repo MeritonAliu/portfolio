@@ -3,13 +3,13 @@ export default function Footer() {
 
   return (
       <footer>
-        <div className="p-footer">
+        <div>
           <p>Meriton Aliu</p>
         </div>
-        <div className="h-footer">
+        <div>
           <h1>Currently under <span className='span-p-description'>contruction</span></h1>
         </div>
-        <div className="p-footer">
+        <div>
           <p>2024</p>
         </div>
       </footer>
