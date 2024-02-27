@@ -1,5 +1,6 @@
 'use client';
 
+import styles from '../app/styles/application.scss'
 import Link from 'next/link'
 import Image from 'next/image';
 import Transition from './components/transition';
