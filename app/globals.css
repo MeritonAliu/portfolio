@@ -61,13 +61,13 @@ html{
 main {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  height: 100vh;
+  height: 100dvh;
 }
 
 
 .landing, .about{
   scroll-snap-align: start;
-  height: 100vh;
+  height: 100dvh;
 }
 
 .landing{
@@ -89,7 +89,7 @@ main {
 .gear-container{
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   margin-right: 50px;
   margin-bottom: 20px;
 }
@@ -226,24 +226,24 @@ main {
   background-color: #000000;
   color: white;
   scroll-snap-align: start;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 @media only screen and (max-width: 780px) {
   .projects{
-    min-height: 160vh;
+    min-height: 160dvh;
   }
 }
 
 @media only screen and (max-width: 1180px) {
   .projects{
-    min-height: 120vh;
+    min-height: 120dvh;
   }
 }
 
 @media only screen and (max-width: 1570px) {
   .projects{
-    min-height: 115vh;
+    min-height: 115dvh;
   }
 }
 
