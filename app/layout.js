@@ -1,5 +1,7 @@
 import { roboto } from './fonts'
 
+import styles from '../app/styles/application.scss'
+
 export const metadata = {
   title: "Meriton Aliu",
   description: "My personal webpage about me :)",
