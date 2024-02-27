@@ -96,25 +96,20 @@ main {
 }
 
 .gear-container{
-  display: flex;
-  flex-direction: column;
-  min-width: 48px;
-  max-width: 48px;
-  height: 50%;
-  justify-content: flex-end;
-  justify-self: center;
-  align-self: center;
-  padding-right: 50px;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  bottom: 20%;
+  transform: translate(-50%, -50%);
 }
 
 .gear{
-  display: block;
-  max-width: 48px;
-  min-width: 48px;
   height: auto;
+  min-width: 350px;
+  max-width: 350px;
   filter: invert(100%);
-  animation: gearTurn 4s infinite;
-  
+  animation: gearTurn 16s infinite;
+  opacity: 0.05;
 }
 
 .p-description{
