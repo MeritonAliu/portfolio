@@ -12,7 +12,7 @@ export default function Home() {
       <div className="landing">
         <h1 className='typewriter'>Meriton Aliu</h1>
         <Transition>
-          
+
           <div className="headline">
             <div className="gear-container">
               <Image className="gear" src={gear} alt="gear" height={500} width={500} />
@@ -64,7 +64,6 @@ export default function Home() {
             </p>
           </div>
         </div>
-
       </div>
       <div id='projects' className="projects">
         <h1 className='titles'>My projects</h1>
