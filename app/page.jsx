@@ -18,6 +18,7 @@ export default function Home() {
               <Image className="gear" src={gear} alt="gear" height={500} width={500} />
             </div>
             <p className="p-description">a young <span className='span-p-description'>aspiring</span> <br /> engineer and developer</p>
+            <div className="gear-container"/>
           </div>
           <div className="btn-container">
             <Link className="btn" href="https://github.com/MeritonAliu/">

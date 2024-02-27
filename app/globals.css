@@ -19,6 +19,12 @@ html{
   scroll-behavior: smooth;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @keyframes text {
   0% { 
     width: 0; 
@@ -81,32 +87,44 @@ main {
 
 .headline{
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
+  flex-direction: row; /* Stack children vertically */
+  justify-content: center; /* Center children vertically */
+  align-items: center; /* Center children horizontally */
+  text-align: center;
+  height: 50dvh;
+  position: relative;
 }
 
 .gear-container{
   display: flex;
   flex-direction: column;
+  min-width: 48px;
+  max-width: 48px;
+  height: 50%;
   justify-content: flex-end;
-  margin-right: 50px;
-  margin-bottom: 20px;
+  justify-self: center;
+  align-self: center;
+  padding-right: 50px;
 }
 
 .gear{
+  display: block;
   max-width: 48px;
+  min-width: 48px;
   height: auto;
   filter: invert(100%);
   animation: gearTurn 4s infinite;
+  
 }
 
 .p-description{
   font-size: 32px;
   font-weight: bold;
-  margin-top: 25%;
+  margin-top: 200px;
   flex-basis: 50%;
-
+  min-width: 190px;
+  max-width: 320px;
+  text-align: center;
 }
 
 .span-p-description{
