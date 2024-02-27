@@ -177,16 +177,32 @@ main {
 
 @media (min-width: 576px) {
   .about {
-    gap: 25%;
+    gap: 0%;
   }
 }
+
+.about-divider{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-top: 64px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.contactme{
+  flex: 1;
+  text-align: center;
+}
+
+
 .about-p-container{
+  flex: 1;
   display: flex;
   text-align: center;
-  flex-wrap: wrap;
-  padding-left: 32px;
-  padding-right: 32px;
   gap: 40px;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -207,11 +223,6 @@ main {
 .about-p-child:hover{
   scale: 1.05;
   opacity: 0.95;
-}
-
-.about-p-child:nth-child(3n){
-  max-width: 100%;
-  flex-basis: 100%; /* Added this line */
 }
 
 .about-p-title{
