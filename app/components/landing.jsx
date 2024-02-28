@@ -28,9 +28,6 @@ export default function Landing() {
           </Link>
         </div>
       </Transition>
-      <Link href="#about" className="p-scroll">
-        scroll down for more
-      </Link>
     </div>
   );
 }

@@ -20,19 +20,12 @@
 }
 
 html{
-  scroll-behavior: smooth;
+  overflow-x: hidden;
+  
   background-color: $primary-background-color;
 }
 
-* {
+p, h1, a {
   line-height: 1.5;
   color: white;
-}
-
-
-main {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100dvh;
-  overflow-x: hidden;
 }
