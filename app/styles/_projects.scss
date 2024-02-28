@@ -4,7 +4,7 @@
   flex-direction: column;
   background-color: $primary-background-color;
   color: white;
-  min-height: 95dvh;
+  
   margin-bottom: 32px;
 
   .projects-container{
@@ -16,18 +16,16 @@
     
     
     .proj{
-      width: 350px;
-      
+      width: 300px;
       height: 350px;
       display: flex; 
       flex-direction: column;
       align-items: center;
-      border: white 2px solid;
+      border: white 4px solid;
       border-radius: 16px;
       transition: transform 0.3s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
-      flex: 1 0 calc(50% - 50px);
-      box-sizing: border-box;
-      
+      margin-left: 32px;
+
       &:hover{
         transform: scale(1.05);
         transition: 0.3s;

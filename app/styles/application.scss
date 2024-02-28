@@ -20,9 +20,11 @@
 }
 
 html{
-  overflow-x: hidden;
-  
   background-color: $primary-background-color;
+}
+
+main, body{
+  overflow-x: hidden;
 }
 
 p, h1, a {
