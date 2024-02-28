@@ -7,12 +7,22 @@ footer{
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding-bottom: 20px;
   padding-top: 20px;
   text-align: center;
-  border-top: white 2px solid
+  border-top: white 2px solid;
+  overflow: hidden;
 
-  p{
-    width: 30%;
+  div{
+    
+    line-height: 1.5;
+    margin-bottom: 16px;
+    min-width: 132px;
+    flex-wrap: wrap;
+
+    p{
+      font-size: clamp(0.75rem, 0.4821rem + 1.1429vw, 1.125rem);
+    }
   }
+
+
 }
