@@ -6,7 +6,7 @@ export default function Home() {
 
   return (
     <div id='projects' className="projects">
-      <h1 className='titles'>My projects</h1>
+      <h1 className='subpage-title'>My projects</h1>
       <div className='projects-container'>
         <Link href="https://github.com/MeritonAliu/weatherio">
           <div className="proj">

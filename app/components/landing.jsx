@@ -7,7 +7,7 @@ export default function Landing() {
 
   return (
     <div className="landing">
-      <h1 className='typewriter'>Meriton Aliu</h1>
+      <h1 className='typewriter subpage-title'>Meriton Aliu</h1>
       <Transition>
 
         <div className="headline">

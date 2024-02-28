@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "./common";
 @import "./variables";
+@import "./common";
 @import "./reset";
 @import "./about";
 @import "./footer";

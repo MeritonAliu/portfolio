@@ -1,6 +1,16 @@
 .span-p-description{
-  color: #6919ff;
-  background-color: #ffffff;
+  color: $primary-magenta;
+  background-color: $secondary-background-color;
   border-radius: 4px;
   padding: 0px 8px 0px 8px;
+}
+
+.subpage-title{
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-bottom: solid 1px $primary-border-color;
+  align-self: center;
 }

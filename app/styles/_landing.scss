@@ -12,12 +12,7 @@
     overflow: hidden;
     /* Start with opacity 0 to hide the text */
     opacity: 0;
-    animation:  text 1s steps(24) 1s forwards; /* 'forwards' will maintain the final state after the animation completes */
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 8px;
-    border-bottom: solid 1px #ffffff;
-    align-self: center; 
+    animation:  text 1s steps(24) 1s forwards;
   
     @keyframes text {
       0% { 
