@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  height: 100vh;
+  min-height: 100dvh;
+  max-height: 100dvh;
   background-color: #000000;
   color: #fffef9;
 
