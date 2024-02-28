@@ -54,13 +54,15 @@
     flex-direction: row;
     justify-content: center;
     gap: 48px;
+    flex-wrap: wrap;
+    margin-left: 16px;
+    margin-right: 16px;
   
     .btn{
       border: #fffef9 1px solid;
       border-radius: 8px;
       padding: 8px;
       cursor: pointer;
-      margin-top: 64px;
       width: 120px;
       height: 48px;
       scale: 1.00;
