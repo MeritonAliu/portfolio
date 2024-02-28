@@ -3,7 +3,7 @@
   flex-direction: column;
   text-align: center;
   min-height: 100dvh;
-  max-height: 100dvh;
+  min-height: -webkit-fill-available;
   background-color: #000000;
   color: #fffef9;
 
