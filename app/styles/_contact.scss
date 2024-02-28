@@ -1,3 +1,4 @@
+
 .contact{
   display: flex;
   flex-direction: column;
@@ -77,4 +78,12 @@
       }
     }
   }
+}
+
+.return{
+  margin-top: 80px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
 }

@@ -5,8 +5,8 @@ export default function Contact() {
   const [state, handleSubmit] = useForm("mrgnkayz");
   if (state.succeeded) {
     return (
-      <div id='contact' className="contact">
-        <p>Thanks for joining!</p>
+      <div id='contact' className="contact return">
+        <p>Thanks you for the message!</p>
       </div>
 
     );

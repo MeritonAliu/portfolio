@@ -1,5 +1,4 @@
 footer{
-  scroll-snap-align: start;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -9,14 +8,34 @@ footer{
 
   div{
     margin: 16px 0px 16px 0px;
-    min-width: 130px;
     flex-wrap: wrap;
+    width: 130px;
 
     p{
       font-size: clamp(0.75rem, 0.4821rem + 1.1429vw, 1.125rem);
       margin: 0px 12px 0px 12px;
     }
+
+    a{
+      min-width: 130px;
+      border: #fffef9 1px solid;
+      border-radius: 8px;
+      min-height: 32px;
+      box-shadow: #370d86 5px 5px 1px 1px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  
+      &:hover{
+        background: #fffef9;
+        color: #6919ff;
+        transform: scale(1.03);
+        transition: 0.3s;
+        box-shadow: #370d86 10px 10px 2px 2px;
+    }
   }
 
-
+  }
 }

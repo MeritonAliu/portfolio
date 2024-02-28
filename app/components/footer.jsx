@@ -7,7 +7,7 @@ export default function Footer() {
         <p>Meriton Aliu</p>
       </div>
       <div>
-        <p>Currently under <span className='span-p-description'>contruction</span></p>
+        <a href="#landing"> Start</a>
       </div>
       <div>
         <p>2024</p>

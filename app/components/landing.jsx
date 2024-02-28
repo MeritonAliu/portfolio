@@ -6,7 +6,7 @@ import gear from './../../public/icons8-gear.svg';
 export default function Landing() {
 
   return (
-    <div className="landing">
+    <div id='landing' className="landing">
       <h1 className='typewriter subpage-title'>Meriton Aliu</h1>
       <Transition>
 
