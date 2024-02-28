@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./variables";
+@import "./common";
+@import "./reset";
+@import "./about";
+@import "./footer";
+@import "./landing";
+@import "./mixins";
+@import "./projects";
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+  }
+}
+
+html{
+  scroll-behavior: smooth;
+  background-color: $primary-background-color;
+}
+
+* {
+  line-height: 1.5;
+  color: white;
+}
+
+
+main {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100dvh;
+  overflow-x: hidden;
+}

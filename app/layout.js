@@ -1,5 +1,6 @@
 import { roboto } from './fonts'
-import "./globals.css";
+
+import styles from '../app/styles/application.scss'
 
 export const metadata = {
   title: "Meriton Aliu",

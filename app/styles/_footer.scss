@@ -1,0 +1,22 @@
+footer{
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  border-top: $primary-border-color 2px solid;
+  background-color: $primary-background-color;
+
+  div{
+    margin: 16px 0px 16px 0px;
+    min-width: 130px;
+    flex-wrap: wrap;
+
+    p{
+      font-size: clamp(0.75rem, 0.4821rem + 1.1429vw, 1.125rem);
+      margin: 0px 12px 0px 12px;
+    }
+  }
+
+
+}
