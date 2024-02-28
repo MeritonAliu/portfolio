@@ -23,6 +23,9 @@ export default function Landing() {
           <Link className="btn" href="https://ch.linkedin.com/in/meriton-aliu-44a595252">
             Linkedin
           </Link>
+          <Link className="btn" href="/#contact">
+            Email
+          </Link>
         </div>
       </Transition>
       <Link href="#about" className="p-scroll">
