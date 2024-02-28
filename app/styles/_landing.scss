@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  min-height: 100vh; // Fallback for browsers that do not support CSS variables
-  min-height: calc(var(--vh, 1vh) * 100);
+  min-height: 100dvh;
+  min-height: -webkit-fill-available;
   background-color: #000000;
-  color: #fffef9;
+  color: #fffef9; 
 
   .typewriter {
     white-space: nowrap;
