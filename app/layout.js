@@ -1,6 +1,7 @@
 import { roboto } from './fonts'
 
 import styles from '../app/styles/application.scss'
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
   title: "Meriton Aliu",
@@ -10,7 +11,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>{children}</body>
+      <body className={roboto.className}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
