@@ -52,6 +52,17 @@ export default function Home() {
             </p>
           </div>
         </Link>
+        <Link href="https://www.cyclistfriends-zo.ch/">
+          <div className="proj">
+            <h1 className="proj-title">
+              CFZO
+            </h1>
+            <Image className='project-images' src={"/cfzo.png"} width={500} height={500} alt='"High-Pass filter Bode Magnitude and Phase plots" by User:Brews_ohare is marked with CC0 1.0. ' loading='lazy' />
+            <p className="project-description">
+              Website made for a cycling club with NextJs
+            </p>
+          </div>
+        </Link>
       </div>
     </div>
   );
