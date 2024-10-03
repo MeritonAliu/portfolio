@@ -5,7 +5,7 @@
   min-height: 100dvh;
   min-height: -webkit-fill-available;
   background-color: #000000;
-  color: #fffef9; 
+  color: #fffef9;
 
   .typewriter {
     white-space: nowrap;
@@ -13,17 +13,17 @@
     /* Start with opacity 0 to hide the text */
     opacity: 0;
     animation:  text 1s steps(24) 1s forwards;
-  
+
     @keyframes text {
-      0% { 
-        width: 0; 
+      0% {
+        width: 0;
         opacity: 0;
       }
       1%{
         opacity: 1;
       }
-      100% { 
-        width: 176px; 
+      100% {
+        width: 176px;
         opacity: 1;
       }
     }
@@ -57,16 +57,16 @@
     flex-wrap: wrap;
     margin-left: 16px;
     margin-right: 16px;
-    margin-top: 100px;
-  
+    margin-top: 80px;
+
     .btn{
       border: #fffef9 1px solid;
-      border-radius: 8px;
-      padding: 8px;
+      border-radius: 16px;
+      padding: 0px;
       cursor: pointer;
-      width: 120px;
-      height: 48px;
-      scale: 1.00;
+      width: 220px;
+      height: 80px;
+      scale: 1.0;
       box-shadow: #370d86 5px 5px 1px 1px;
       font-weight: bold;
       display: flex;
@@ -75,7 +75,7 @@
       font-size: 16px;
       transition: transform 0.3s ease-in-out, background-color 0.4s ease-in-out, color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
       transform-style: preserve-3d; /* Optional for smooth shadow animation */
-  
+
       &:hover{
         background: #fffef9;
         color: #6919ff;
@@ -91,7 +91,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  
+
     .gear{
       height: auto;
       min-width: 350px;
@@ -110,11 +110,11 @@
   50% {
     transform: rotate(370deg);
     animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
-  
+
   }
   100% {
     transform: rotate(0deg);
-  
+
   }
 }
 
