@@ -8,6 +8,17 @@ export default function Home() {
     <div id='projects' className="projects">
       <h1 className='subpage-title'>My projects</h1>
       <div className='projects-container'>
+        <Link href="https://github.com/meritonaliu/emojitotext">
+          <div className="proj">
+            <h1 className="proj-title">
+              EmojiToText
+            </h1>
+            <Image className='project-images' src={"/emojitotext.png"} width={500} height={500} alt='emojitotext' loading='lazy' />
+            <p className="project-description">
+              Simple NuGet package that converts emojis to text and vice versa.
+            </p>
+          </div>
+        </Link>
         <Link href="https://github.com/MeritonAliu/weatherio">
           <div className="proj">
             <h1 className="proj-title">
