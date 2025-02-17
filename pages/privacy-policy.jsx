@@ -29,7 +29,7 @@ export default function PrivacyPolicy() {
         <h2>5. Contact Us</h2>
         <p>If you have any questions about this Privacy Policy, you can contact us at:</p>
         <ul>
-          <li>📧 <a href="mailto:your-email@example.com">your-email@example.com</a></li>
+          <li>📧 <a href="mailto:tonialiu03@gmail.com">E-Mail</a></li>
           <li>🌍 <a href="https://www.meritonaliu.ch" target="_blank" rel="noopener noreferrer">www.meritonaliu.ch</a></li>
         </ul>
       </div>

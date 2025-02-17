@@ -9,7 +9,21 @@ export default function Landing() {
     <div id='landing' className="landing">
       <h1 className='typewriter subpage-title'>Meriton Aliu</h1>
       <Transition>
-
+        <div style={{ textAlign: "center", marginTop: "20px" }}>
+          <Link href="/privacy-policy">
+            <button style={{
+              padding: "10px 20px",
+              fontSize: "16px",
+              backgroundColor: "#0070f3",
+              color: "white",
+              border: "none",
+              borderRadius: "5px",
+              cursor: "pointer",
+            }}>
+              View Privacy Policy
+            </button>
+          </Link>
+        </div>
         <div className="headline">
           <p className="p-description">a young <span className='span-p-description'>aspiring</span> <br /> engineer and developer</p>
           <div className="gear-container">
