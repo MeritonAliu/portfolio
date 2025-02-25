@@ -1,12 +1,18 @@
-@import "./variables";
-@import "./common";
+// @import "./common";
+// @import "./about";
+// @import "./footer";
+// @import "./landing";
+// @import "./mixins";
+// @import "./projects";
+// @import "./contact";
+
 @import "./reset";
-@import "./about";
-@import "./footer";
-@import "./landing";
-@import "./mixins";
-@import "./projects";
-@import "./contact";
+
+$primary-background-color: #111111;
+$secondary-background-color: #ffffff;
+$primaryTextColor: #ffffff;
+$primary-border-color: #ffffff;
+$primary-magenta: #6919ff;
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -29,7 +35,8 @@ body {
 
 p,
 h1,
+h2,
 a {
   line-height: 1.5;
-  color: white;
+  color: $primaryTextColor;
 }
